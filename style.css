@@ -33,8 +33,12 @@
 }
 
 .container {
-  width: 100vw;
+  margin: 0 auto;
+  width: 100%;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
   overflow: hidden;
 }
@@ -61,7 +65,6 @@
 }
 
 .content {
-  max-width: 90rem;
   width: 100%;
   height: 100%;
   margin: 0 auto;
@@ -334,15 +337,41 @@
 
 @media screen and (max-width: 40rem) {
   .container {
-    width: 100%;
-    height: 100dvb;
-  }
-  .content {
-    width: 80%;
     margin: 0 auto;
+    width: 100%;
+    height: auto;
+    min-height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 1rem 0;
+    overflow: hidden;
+  }
+
+  .phone-container-content {
+    width: 90%;
+    max-width: 20rem;
+    height: auto;
+    min-height: auto;
+  }
+
+  .phone-top-box {
+    top: 0.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .content {
+    width: 100%;
+    height: 100%;
+    margin: auto;
     display: flex;
     flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     row-gap: 2rem;
+    overflow: auto;
   }
 
   .text-content {
@@ -351,6 +380,8 @@
   }
 
   .description {
+    margin: 0 auto;
+    width: 85%;
     font-size: 1rem;
   }
 }
