@@ -356,7 +356,6 @@
   }
 
   .phone-top-box {
-    top: 0.5rem;
     left: 50%;
     transform: translateX(-50%);
   }
